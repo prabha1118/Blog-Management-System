@@ -86,6 +86,10 @@ const checkAuthorizationAndRole = (roles = []) => {
   };
 };
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Blog Management API");
+});
+
 // User Management APIs
 
 // Signup API
