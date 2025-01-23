@@ -14,9 +14,6 @@ const connectDBAndStartServer = async () => {
   try {
     await mongoose.connect(process.env.DB_CONNECTION_STRING);
     console.log("Successfully connected to MongoDB");
-    app.listen(3000, () => {
-      console.log("Server is running");
-    });
   } catch (error) {
     console.log(`Error: ${error}`);
     process.exit(1);
@@ -24,6 +21,9 @@ const connectDBAndStartServer = async () => {
 };
 
 connectDBAndStartServer();
+app.listen(3000, () => {
+  console.log("Server is running");
+});
 
 const checkSignupData = (request, response, next) => {
   const { username, password, email } = request.body;
