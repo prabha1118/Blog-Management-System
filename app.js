@@ -442,6 +442,8 @@ app.delete(
   }
 );
 
+module.exports = app;
+
 // johnwick jwt token - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG53aWNrQGdtYWlsLmNvbSIsImlhdCI6MTczNzYxMDE1Nn0.qRWjeX3wSf_T5qIUVxRO4UWo7g74s2WEbypCX5q0sf8
 
 // jacksparrow jwt token - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImphY2tzcGFycm93QGdtYWlsLmNvbSIsImlhdCI6MTczNzYzODg1NX0.hOGM9lcH7yFTemwkHKA-V5FV_1Hyr3rnaRAIlztLtCk
