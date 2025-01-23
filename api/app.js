@@ -2,9 +2,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
-const Blog = require("./models/Blog");
-const Comment = require("./models/Comment");
-const User = require("./models/User");
+const Blog = require("../models/Blog");
+const Comment = require("../models/Comment");
+const User = require("../models/User");
 require("dotenv").config();
 
 const app = express();
